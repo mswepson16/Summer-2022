@@ -23,8 +23,9 @@
     where first_name = 'BOB' and last_name = 'FAWCETT';
 
 7. Use a Stored Procedure to get the 4 inventory ids for the film "Alien Center" at Store #2.
+    select @q_film_id := film_id from film where title ="ALIEN CENTER"
     set @p_film_count = 0;
-    call sakila.film_in_stock(15, 2, @p_film_id);
+    call sakila.film_in_stock(@q_film_id, 2, @p_film_id);
 
 8. Insert a new store. Ensure that you use TRANSACTION. (This one is possible but it's tough! Pay attention to constraints and the order that you are inserting data.)
   START TRANSACTION;
