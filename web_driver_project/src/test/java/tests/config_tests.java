@@ -2,15 +2,12 @@ package tests;
 
 import static org.testng.Assert.assertEquals;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import dataProvider.ConfigFileReader;
-import dataProvider.WebDriverFactory;
-import org.openqa.selenium.edge.EdgeDriver;
+import dataProvider.TestBase;
 
 
-
-public class config_tests {
+public class config_tests extends TestBase{
   @Test
   public void canReadConfigValues() {
 	  String expectedResult = "https://demoqa.com";
@@ -21,10 +18,10 @@ public class config_tests {
   
   @Test
   public void canSelectWebDriver() {
-	  String expectedResult = "";
-	  WebDriver result = WebDriverFactory.getWebDriver("Edge");
+	  String expectedResult = "103.0.1264.62";
+	  String result = getDriverVersion("Edge");
 	  
-	  assertEquals(result, expectedResult, "expected webdriver for edge");
+	  assertEquals(result, expectedResult, "expected version details for edge");
 	  
   }
 }

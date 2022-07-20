@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class ConfigFileReader {
 	private Properties properties;
-	private final String propertyFilePath= "configs\\Config.properties";
+	private final String propertyFilePath= "/web_driver_project/src/test/resources/configs/Config.properties";
 	
 	public ConfigFileReader() {
 		BufferedReader reader;
@@ -21,6 +21,7 @@ public class ConfigFileReader {
 				reader.close();
 			} catch(IOException e) {
 				e.printStackTrace();
+				throw new RuntimeException("Unable to load or close" + reader);
 			}
 		} catch(FileNotFoundException e) {
 			e.printStackTrace();

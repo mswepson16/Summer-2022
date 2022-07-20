@@ -5,7 +5,7 @@
     <classes>
       <class name="tests.config_tests">
         <methods>
-          <include name="canReadConfigValues"/>
+          <include name="canSelectWebDriver"/>
         </methods>
       </class> <!-- tests.config_tests -->
     </classes>

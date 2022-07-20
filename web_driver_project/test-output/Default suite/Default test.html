@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 18 16:22:12 EDT 2022</td>
+<td>Started on:</td><td>Wed Jul 20 17:49:57 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (122 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (96 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,10 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.config_tests.canReadConfigValues()'><b>canReadConfigValues</b><br>Test class: tests.config_tests</td>
-<td><div><pre>java.lang.RuntimeException: Config.properties not found at configs\Config.properties
-	at dataProvider.ConfigFileReader.&lt;init&gt;(ConfigFileReader.java:27)
-	at tests.config_tests.canReadConfigValues(config_tests.java:13)
+<td title='tests.config_tests.canSelectWebDriver()'><b>canSelectWebDriver</b><br>Test class: tests.config_tests</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	Invalid character constant
+
+	at dataProvider.TestBase.getDriverVersion(TestBase.java:6)
+	at tests.config_tests.canSelectWebDriver(config_tests.java:22)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -105,10 +107,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1223867739", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1223867739'><pre>java.lang.RuntimeException: Config.properties not found at configs\Config.properties
-	at dataProvider.ConfigFileReader.&lt;init&gt;(ConfigFileReader.java:27)
-	at tests.config_tests.canReadConfigValues(config_tests.java:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1427646530", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1427646530'><pre>java.lang.Error: Unresolved compilation problem: 
+	Invalid character constant
+
+	at dataProvider.TestBase.getDriverVersion(TestBase.java:6)
+	at tests.config_tests.canSelectWebDriver(config_tests.java:22)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -137,7 +141,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>tests.config_tests@1ffe63b9</td></tr>
+<td>tests.config_tests@75329a49</td></tr>
 </table><p>
 </body>
 </html>
