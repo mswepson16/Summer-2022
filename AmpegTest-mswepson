@@ -4,7 +4,10 @@ Test Case ID: 1
 Title: Artist Endorsement
 Summary: Test to ensure users are able to view the artist endrsement for a product
 Test steps:
-	1) Go to specific product
+	1) Go to ampeg products
+	2) Go to svt pro series
+	3) click svt-3Pro
+	4) Check for artist endorsment on page
 Expected Result: User can see artist endorsement.
 Traceability: FR-002, FR-003, FR-004, FR-005
 Test data: URL: https://ampeg.com/products/pro/svt3pro/
@@ -17,7 +20,10 @@ Test Case ID: 2
 Title: Product Specs
 Summary: Test to ensure users are able to view specifications for an individual product
 Test steps:
-	1) Go to specific product
+	1) Go to ampeg products
+	2) Go to svt pro series
+	3) click svt-3Pro
+	4) check for specifications listed on page
 Expected Result: User can see specifications
 Traceability:FR-001, FR-003, FR-005
 Test data: URL: https://ampeg.com/products/pro/svt3pro/
@@ -28,8 +34,11 @@ Test Case ID: 3
 Title: Product Dealers
 Summary: Test to ensure users can find dealers for individual product
 Test Steps:
-	1)Go to specific product
-	2)Select "FIND A DEALER"
+	1)Go to products
+	2)Go to svt pro series
+	3)click svt-3Pro
+	4)Select "FIND A DEALER"
+	5)Check for dealer options
 Expected Result: User can see multiple dealer options 
 Traceability:FR-001, FR-002, FR-004, FR-005
 Test data: URL: https://ampeg.com/products/pro/svt3pro/
@@ -41,6 +50,7 @@ Title: Endorsed Artists
 Summary: Test to ensure users can see all artists endorsing Ampeg products
 Test Steps:
 	1)Go to artists
+	2)Check for list of artists
 Expected Result: User can see all endorsng artists
 Traceability: FR-001, FR-002, FR-003, FR-005
 Test data: https://ampeg.com/artists/
