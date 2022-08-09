@@ -2,12 +2,14 @@ package framework;
 
 import java.util.Set;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public abstract class PageObjectBase {
 	private WebDriver driver;
 	private String baseUrl;
+	
 	
 	protected PageObjectBase(WebDriver driver, String baseUrl) {
 		this.driver = driver;
@@ -18,6 +20,10 @@ public abstract class PageObjectBase {
 	
 	public String getCurrentUrl() {
 		return getDriver().getCurrentUrl();
+	}
+	
+	public String grabText(String selector) {
+		return getDriver().findElement(By.xpath(selector)).getText();
 	}
 	
 	protected WebDriver getDriver() {

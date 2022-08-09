@@ -1,6 +1,6 @@
 import static org.testng.Assert.assertEquals;
 
-
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import foundation.TestBase;
@@ -31,7 +31,7 @@ public class ampeg_test extends TestBase{
 			  .products()
 			  .classic()
 			  .svt410hlf()
-			  .getCurrentUrl();
+			  .grabText("[//*[@id=\"artist\"]/p/b]");
 	  
 	  assertEquals(expectedName,artistName,"User was expected to see ArtistName");
   }
