@@ -1,3 +1,4 @@
+package tests;
 import static org.testng.Assert.assertEquals;
 
 
@@ -5,6 +6,7 @@ import org.testng.annotations.Test;
 
 import foundation.TestBase;
 import pages.HomePageObject;
+import pages.svt410hlfPageObject;
 
 
 public class ampeg_test extends TestBase{
@@ -25,7 +27,7 @@ public class ampeg_test extends TestBase{
   
   @Test
   public void canGetArtistName() {
-	  String expectedName = "Bootsy Collins";
+	  String expectedName = svt410hlfPageObject.URL;
 	  String artistName = new HomePageObject(this.getDriver(),this.getBaseUrl())
 			  .navigate()
 			  .products()
@@ -33,7 +35,7 @@ public class ampeg_test extends TestBase{
 			  .svt410hlf()
 			  .getCurrentUrl();
 	  
-	  assertEquals(expectedName,artistName,"User was expected to see ArtistName");
+	  assertEquals(svt410hlfPageObject.URL,artistName,"User was expected to see ArtistName");
   }
 
 }
