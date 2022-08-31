@@ -33,7 +33,7 @@ public class LinkPage extends PageObjectBase{
 	public LinkPage getApiCall() {
 		WebElement element = getDriver().findElement(By.id("linkResponse"));
 		Link link = new Link(element);
-		link.
+		link.getIsSelected();
 		
 		return this;
 	}

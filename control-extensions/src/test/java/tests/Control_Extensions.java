@@ -1,7 +1,9 @@
+package tests;
 import org.testng.annotations.Test;
 
 import foundation.DemoQaTestBase;
 import pages.RadioButtonPage;
+import pages.SliderPage;
 import pages.TextboxPage;
 
 import static org.testng.Assert.assertEquals;
@@ -41,46 +43,59 @@ public class Control_Extensions extends DemoQaTestBase {
   }
   
   @Test
-  public canSendApiCall() {
+  public void canSendApiCall() {
 	  String expectedresult = "Link has responded with staus 201 and status text Created";
 	  
   }
   
   @Test
-  public canGetValue80() {
-	 int expectedValue = 80; 
+  public void canGetValue80() {
+	 String expectedValue = "80"; 
+	 String result = new SliderPage(this.getDriver(),this.getBaseUrl())
+			 .navigate()
+			 .setSlider("80")
+			 .getValue().toString();
 	 
-	 assertEquals(expectedValue,result,"Expected the number 80");
+	assertEquals(expectedValue,result,"Expected the number 80");
   }
   
   @Test
-  public canGetValue17() {
-	  int expectedValue = 17;
-	  
+  public void canGetValue17() {
+	  String expectedValue = "17";
+	  String result = new SliderPage(this.getDriver(),this.getBaseUrl())
+				 .navigate()
+				 .setSlider("17")
+				 .getValue().toString();
 	  assertEquals(expectedValue,result,"Expected the number 17");
   }
   
   @Test
-  public canGetValue0() {
-	  int expectedValue=0;
-	  
+  public void canGetValue0() {
+	  String expectedValue="0";
+	  String result = new SliderPage(this.getDriver(),this.getBaseUrl())
+				 .navigate()
+				 .setSlider("0")
+				 .getValue().toString();
 	  assertEquals(expectedValue,result,"Expected the number 0");
   }
   
   @Test
-  public canGetValue100() {
-	  int expectedValue = 100;
-	  
+  public void canGetValue100() {
+	  String expectedValue = "100";
+	  String result = new SliderPage(this.getDriver(),this.getBaseUrl())
+				 .navigate()
+				 .setSlider("100")
+				 .getValue().toString();
 	  assertEquals(expectedValue,result,"Expected the number 100");
   }
   
   @Test
-  public canSetValueSelectMenu() {
+  public void canSetValueSelectMenu() {
 	  
   }
   
   @Test
-  public canGetAllOptions() {
+  public void canGetAllOptions() {
 	  
   }
 }

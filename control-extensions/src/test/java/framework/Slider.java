@@ -9,6 +9,11 @@ public class Slider extends ControlExtensionBase {
 	public Slider(WebElement mappedElement) {
 		super(mappedElement);
 	}
+	
+	public void setValue(String value) {
+		
+	}
+	
 		
 	public Boolean getIsSelected() {
 		
