@@ -31,9 +31,9 @@ public class SelectMenuPage extends PageObjectBase{
 		return this;
 	}
 	
-	public SelectMenuPage getLink() {
-		
-		SelectMenu.getIsSelected();
+	public SelectMenuPage getLink(String value) {
+		WebElement element = getDriver().findElement(By.id(value));
+		element.isSelected();
 		
 		return this;
 	}

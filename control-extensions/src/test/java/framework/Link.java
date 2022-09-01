@@ -14,9 +14,9 @@ public class Link  extends ControlExtensionBase {
 		super(mappedElement);
 	}
 		
-	public String getIsSelected() {
-		String result;
-		result = ;
+	public boolean getIsSelected() {
+		boolean result;
+		result = this.mappedElement.isSelected();
 		return result;
 			
 		

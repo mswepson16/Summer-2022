@@ -22,7 +22,7 @@ public class SliderPage extends PageObjectBase{
 		return this;
 	}
 	
-	public SliderPage clickSlider(String value) {
+	public SliderPage setSlider(String value) {
 		WebElement element = getDriver().findElement(By.id(value));
 		Slider slider = new Slider(element);
 		slider.click();
@@ -30,9 +30,10 @@ public class SliderPage extends PageObjectBase{
 		return this;
 	}
 	
-	public SliderPage getLink() {
+	public SliderPage getValue() {
 		
-		Slider.getIsSelected();
+		WebElement sliderBox = getDriver().findElement(By.id("sliderValue"));
+		
 		
 		return this;
 	}
