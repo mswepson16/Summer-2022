@@ -1,0 +1,69 @@
+FR-001 As a user I can view artist endorsement for a specific product
+	
+Test Case ID: 1
+Title: Artist Endorsement
+Summary: Test to ensure users are able to view the artist endrsement for a product
+Test steps:
+	1) Go to ampeg products
+	2) Go to svt pro series
+	3) click svt-3Pro
+	4) Check for artist endorsment on page
+Expected Result: User can see artist endorsement.
+Traceability: FR-002, FR-003, FR-004, FR-005
+Test data: URL: https://ampeg.com/products/pro/svt3pro/
+
+
+	
+FR-002 As a user I can view specifications for individual products
+
+Test Case ID: 2 
+Title: Product Specs
+Summary: Test to ensure users are able to view specifications for an individual product
+Test steps:
+	1) Go to ampeg products
+	2) Go to svt pro series
+	3) click svt-3Pro
+	4) check for specifications listed on page
+Expected Result: User can see specifications
+Traceability:FR-001, FR-003, FR-005
+Test data: URL: https://ampeg.com/products/pro/svt3pro/
+
+FR-003 As a user I can find product dealers for individual products
+
+Test Case ID: 3
+Title: Product Dealers
+Summary: Test to ensure users can find dealers for individual product
+Test Steps:
+	1)Go to products
+	2)Go to svt pro series
+	3)click svt-3Pro
+	4)Select "FIND A DEALER"
+	5)Check for dealer options
+Expected Result: User can see multiple dealer options 
+Traceability:FR-001, FR-002, FR-004, FR-005
+Test data: URL: https://ampeg.com/products/pro/svt3pro/
+
+FR-004 As a user I can view, in one location, all artists that endorse Ampeg products
+
+Test Case ID: 4
+Title: Endorsed Artists
+Summary: Test to ensure users can see all artists endorsing Ampeg products
+Test Steps:
+	1)Go to artists
+	2)Check for list of artists
+Expected Result: User can see all endorsng artists
+Traceability: FR-001, FR-002, FR-003, FR-005
+Test data: https://ampeg.com/artists/
+
+FR-005 As a user  can view items in my Shopping Cart  
+
+Test Case ID: 5
+Title: Shopping Carts
+Summary: Test to ensure users can view shopping cart items
+Test Steps:
+	1) Go to Shop.ampeg.com/hardware/
+	3) Add item to cart
+	4) Go to shop.ampeg.com/checkout/cart/
+Expected Result: User can see item in cart
+Traceability:FR-001, FR-002, FR-003, FR-004
+Test data: item = Classic Analog Bass Preamp Pedal
